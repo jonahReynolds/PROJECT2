@@ -29,7 +29,7 @@ void mkdir(char pathName[]){
 
     while (curr != NULL) {
         if (strcmp(curr->name, base) == 0) {
-            printf("MKDIR ERROR: directory %s already exists\n", base);
+            printf("MKDIR ERROR: directory %s already exists\n", pathName);
             return;
         } else if (curr->childPtr != NULL) {
             curr = curr->childPtr;
